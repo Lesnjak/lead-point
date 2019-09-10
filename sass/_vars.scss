@@ -1,0 +1,83 @@
+@import "mixins";
+@import "font";
+
+$red:#e31f26;
+$black:#000000;
+$white:#ffffff;
+$gray:#f7f7f7;
+
+h1{
+  font-size: 40px;
+  font-family: Play, sans-serif;
+  font-weight: $font-weight-bold;
+  @include respond(phone){
+    font-size: 30px;
+  }
+
+}
+h2{
+  font-size: 24px;
+  font-family: Play, sans-serif;
+  font-weight: $font-weight-bold;
+  @include respond(phone){
+    font-size: 20px;
+  }
+}
+
+body{
+  font-size: 16px;
+}
+.wrapper{
+  max-width: 1585px;
+  width: 100%;
+  margin: auto;
+  padding: 90px 0 0;
+  @include respond(tablet){
+    padding: 40px 0;
+  }
+}
+.container{
+  max-width: 1585px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+}
+
+.col-4{
+  width: calc(100% / 4 );
+  border-right: 1px solid $gray;
+  box-sizing: border-box;
+  flex-grow: 1;
+  &:first-child{
+    border-left: 1px solid $gray;
+    @media (max-width: 1585px) {
+      border-left: none;
+
+    }
+  }
+  &:last-child{
+    @media (max-width: 1585px) {
+      border-right: none;
+
+    }
+  }
+
+
+;
+
+}
+.z-1{
+  position: relative;
+  z-index: 1;
+}
+.grow-1{
+  flex-grow: 1;
+}
+.main-title{
+text-transform: uppercase;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 730px;
+  margin: auto;
+}

@@ -1,0 +1,278 @@
+.crater{
+  margin: auto;
+  width: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  @include respond(desctop){
+    display: none;
+  }
+  &__detail{
+    top: -70px;
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    animation: zoom55 20s infinite;
+
+    img{
+      width: 100%;
+    }
+  }
+  @keyframes zoom55 {
+    from{
+    }
+    50%{
+      transform: rotate(15deg) scale(0.7) translateY(25%);
+    }
+    to{
+    }
+  }
+  &__box{
+    position: relative;
+    z-index: 1;
+    bottom: -30px;
+    img{
+      width: 100%;
+    }
+  }
+  &__wrapper{
+    width: 150px;
+    position: relative;
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+
+  }
+  &__coin{
+    width: 38px;
+    left: 61px;
+    position: absolute;
+    img{
+      width: 100%;
+    }
+  }
+  &__coin--1{
+    animation-name: scroll-1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &__coin--2{
+    animation-name: scroll-2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  &__coin--3{
+    animation-name: scroll-3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+  &__coin--4{
+    left: 71px;
+    animation-name: scroll-4;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &__coin--5{
+    left: 71px;
+    animation-name: scroll-5;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  &__coin--6{
+    left: 71px;
+    animation-name: scroll-6;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+  &__coin--7{
+    left: 37px;
+    animation-name: scroll-7;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &__coin--8{
+    left: 37px;
+    animation-name: scroll-8;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  &__coin--9{
+    left: 37px;
+    animation-name: scroll-9;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+  &__table{
+    img{
+      width: 100%;
+    }
+  }
+  @keyframes scroll-1 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 52px;
+    }
+    70%{
+      opacity: 1;
+    }
+    to{
+      top: 52px;
+    }
+  }
+  @keyframes scroll-2 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 46px;
+    }
+    68%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0;
+    }
+    to{
+      top: 46px;
+      opacity: 0;
+    }
+  }
+  @keyframes scroll-3 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 40px;
+    }
+    38%{
+      opacity: 1;
+    }
+    40%{
+      opacity: 0;
+    }
+    to{
+      top: 40px;
+      opacity: 0;
+    }
+  }
+  @keyframes scroll-4 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 99px;
+    }
+    70%{
+      opacity: 1;
+    }
+    to{
+      top: 99px;
+    }
+  }
+  @keyframes scroll-5 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 93px;
+    }
+    68%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0;
+    }
+    to{
+      top: 93px;
+      opacity: 0;
+    }
+  }
+  @keyframes scroll-6 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 87px;
+    }
+    38%{
+      opacity: 1;
+    }
+    40%{
+      opacity: 0;
+    }
+    to{
+      top: 87px;
+      opacity: 0;
+    }
+  }
+  @keyframes scroll-7 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 77px;
+    }
+    70%{
+      opacity: 1;
+    }
+    to{
+      top: 77px;
+    }
+  }
+  @keyframes scroll-8{
+    from{
+      top: 0;
+    }
+    30%{
+      top: 71px;
+    }
+    68%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0;
+    }
+    to{
+      top: 71px;
+      opacity: 0;
+    }
+  }
+  @keyframes scroll-9 {
+    from{
+      top: 0;
+    }
+    30%{
+      top: 66px;
+    }
+    38%{
+      opacity: 1;
+    }
+    40%{
+      opacity: 0;
+    }
+    to{
+      top: 66px;
+      opacity: 0;
+    }
+  }
+}
+

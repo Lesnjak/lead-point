@@ -1,0 +1,1135 @@
+
+.first{
+  background-color: $gray;
+  position: relative;
+  z-index: 2;
+  min-width: 320px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  }
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0 100px;
+    flex-wrap: wrap;
+    @include respond(phone){
+      padding: 40px 0 10px;
+    }
+
+
+  }
+  &__item{
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    width: 320px;
+    margin-bottom: 30px;
+  }
+  &__image{
+    img{
+      @include respond(phoneS){
+        width: 100%;
+
+      }
+    }
+  }
+  &__text{
+    margin-top: 30px;
+
+  }
+}
+.second{
+  margin-top: -120px;
+  position: relative;
+  min-width: 320px;
+  &__wrapper{
+    display: flex;
+    width: calc(300% + 138px);
+    margin-left: -138px;
+    padding-top: 100px;
+    @include respond(desctop){
+      width: 400%;
+      margin-left: -100%;
+    }
+    @include respond(tablet){
+      flex-direction: column;
+      padding-top: 50px;
+
+    }
+  }
+  &__text{
+    width: 50%;
+    margin-right: 50px;
+    padding-bottom: 4vw;
+    box-sizing: border-box;
+    @include respond(desctop){
+      padding-left: 20px;
+      width: 70%;
+      padding-bottom: 0;
+    }
+    @include respond(phoneS){
+      padding-right: 20px;
+      width: 100%;
+      margin-right: 0;
+    }
+
+  }
+  &__head{
+    width: 400%;
+    padding-top: 174px;
+    margin-left: -100%;
+    @include respond(phoneS){
+      padding-top: 142px;
+    }
+  }
+  &__title{
+    font-family: Play, sans-serif;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: $font-weight-reg;
+
+  }
+  &__bold{
+   text-transform: uppercase;
+    font-weight: $font-weight-bold;
+  }
+  &__info{
+    font-family: HelveticaNewCyr, sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  &__left-image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15vw;
+    z-index: 0;
+    font-size: 0;
+    img{
+      width: 100%;
+    }
+    @include respond(desctop){
+      transform: rotateY(180deg);
+      width: 20vw;
+      right: 0;
+      left: auto;
+      bottom: 0;
+    }
+    @include respond(tablet){
+      width: 50vw;
+
+    }
+  }
+  &__top-image{
+    position: absolute;
+    padding: 17px;
+    left: 0;
+    top: -200px;
+    img{
+      width: 100%;
+    }
+    @include respond(desctop){
+      top: -100px;
+    }
+  }
+  &__team-box{
+    display: flex;
+    align-items: flex-end;
+    width: 180%;
+    height: 100%;
+    padding-left: 120px;
+    @media (max-width: 1680px) {
+      padding-left: 50px;
+    }
+  }
+  &__team{
+    box-sizing: border-box;
+    font-size: 0;
+    display: flex;
+    align-items: flex-end;
+
+    img{
+      width: 100%;
+    }
+    @include respond(tablet){
+      padding: 20px 20px 0;
+    }
+  }
+
+
+}
+.therd{
+
+  min-width: 320px;
+  background-color: $gray;
+  position: relative;
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+  }
+  &__new{
+    @include respond(phone){
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+  }
+  &__box{
+    padding: 70px 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond(tablet){
+      padding: 40px 0 80px;
+    }
+    @include respond(phoneS){
+      padding: 40px 0 30px;
+    }
+  }
+
+  &__image{
+    flex-grow: 1;
+    max-width: 550px;
+    margin-right: 90px;
+    img{
+      width: 100%;
+    }
+    @include respond(desctop){
+      display: none;
+    }
+  }
+  &__items{
+
+  }
+  &__items{
+    display: flex;
+    width: 745px;
+    flex-wrap: wrap;
+   @include respond(phone){
+     width: auto;
+     justify-content: center;
+   }
+  }
+  &__item{
+    width: 198px;
+    margin: 25px;
+    @include respond(phoneS){
+    width: 290px;
+      margin: 25px 0;
+  }
+
+  }
+  &__square{
+    width: 198px;
+    height: 198px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    background-color: $white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond(phoneS){
+      width: 290px;
+      height: 290px;
+      img{
+        width: 50%;
+      }
+    }
+  }
+  &__num{
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    font-size: 58px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+  }
+  &__text{
+    margin-top: 26px;
+    text-align: center;
+    font-family: HelveticaNewCyr, sans-serif;
+
+  }
+  &__lincoln{
+    padding: 70px 70px 110px;
+    @include respond(tablet){
+      padding:40px 10px 20px;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+}
+.fifth{
+  margin-top: -120px;
+  position: relative;
+  min-width: 320px;
+  overflow: hidden;
+  &__items{
+    padding: 70px 0;
+    width: calc(400% + 5px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include respond(tablet){
+      padding: 40px 0;
+    }
+  }
+  &__absolute{
+    position: absolute;
+    background-color:#dfdfdf;
+    box-sizing: border-box;
+    width: 100%;
+    top: calc(100% - 70px);
+    left: 0;
+    padding: 20px;
+    transition: 0.5s;
+    p{
+      font-family: HelveticaNewCyr, sans-serif;
+      font-size: 16px;
+    }
+  }
+  &__text{
+    margin-bottom: 30px;
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+  &__item{
+    text-align: center;
+    width: 291px;
+    box-sizing: border-box;
+    height: 291px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 17px;
+    background-color: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+    position: relative;
+    margin: 17px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover{
+.fifth__absolute{
+  top: 0;
+}
+    }
+
+  }
+  &__image{
+    flex-grow: 1;
+
+  }
+  &__decor{
+    position: absolute;
+    transform: translateX(-50%);
+    left: -6px;
+    bottom: 40px;
+  }
+
+}
+.sixth{
+  background-color: $gray;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  min-width: 320px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  }
+
+  &__slider{
+    padding: 70px 0 140px;
+      @include respond(phone){
+        padding: 40px 0 10px;
+      }
+  }
+  &__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond(desctop){
+      flex-direction: column-reverse;
+
+
+
+    }
+    @include respond(phoneS){
+      padding: 0 10px;
+    }
+
+
+  }
+  &__red{
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    margin-bottom: 38px;
+  }
+  &__item{
+    padding: 55px 45px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 7px;
+    box-sizing: border-box;
+    width: 742px;
+    min-height: 437px;
+    position: relative;
+    flex-shrink: 0;
+    z-index: 1;
+    transform: translateX(20%);
+    @include respond(desctop){
+      transform: translateX(0);
+      max-width: 742px;
+      width: 100%;
+      margin-top: -300px;
+    }
+    @include respond(tablet){
+      max-width: 650px;
+
+    }
+    @include respond(phone){
+      max-width: 100% ;
+      margin-top: -30px;
+
+    }
+    @include respond(phone){
+      padding: 20px 20px;
+    }
+  }
+  &__wrapper{
+    @include respond(nout){
+    }
+  }
+  &__text{
+    font-size: 18px;
+    font-family: HelveticaNewCyr, sans-serif;
+    margin-bottom: 38px;
+    @include respond(phone){
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+  &__price-box{
+    display: flex;
+    justify-content: space-between;
+    @include respond(phone){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__price{
+    text-align: center;
+    &:last-child{
+      margin-right: 0;
+      @include respond(phone){
+        margin-right: 20px;
+      }
+
+    }
+    @include respond(phone){
+      margin: 0 20px 20px 20px;
+    }
+  }
+  &__title{
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 16px;
+    @include respond(phone){
+      margin-bottom: 10px;
+    }
+  }
+  &__number{
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    font-size: 36px;
+    @include respond(phone){
+      font-size: 25px;
+    }
+  }
+  &__image{
+    border-radius: 7px;
+    overflow: hidden;
+    transform: translateX(-20%);
+    @include respond(desctop){
+      animation: none;
+      transform: translateX(0);
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+  &__circle{
+    width: 322px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    img{
+      width: 100%;
+    }
+  }
+  &__red-decor{
+    width: 50%  ;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    img{
+      width: 100%;
+    }
+  }
+}
+.active .sixth__image{
+  animation: zoomOut 2s;
+  @include respond(desctop){
+    animation: none;
+  }
+}
+.active .sixth__item{
+  animation: zoomIn 2s;
+  @include respond(desctop){
+    animation: none;
+  }
+}
+@keyframes zoomOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+@keyframes zoomIn {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(20%);
+  }
+
+}
+
+.owl-dots button{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: $red;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: $black;
+
+}
+.owl-dots {
+  display: none;
+}
+.owl-theme .owl-nav .owl-prev{
+  font-size: 70px;
+  background-color:transparent;
+  border: none;
+  position: absolute;
+  margin: 0;
+  color: black;
+  padding: 0;
+  left: 15px;
+  top:calc(50% - 130px) ;
+  outline: none;
+  @include respond(nout){
+    color: #000;
+    top:calc(50% - 90px) ;}
+  &:hover{
+    background-color:transparent;
+    span{
+      color: black;
+    }
+  }
+  @include respond(phoneS){
+    left: 0;
+  }
+
+}
+.owl-theme .owl-nav .owl-next{
+  background-color:transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+  position: absolute;
+  right: 15px;
+  top:calc(50% - 130px) ;
+  outline: none;
+  @include respond(nout){
+
+    top:calc(50% - 90px) ;
+
+  }
+  @include respond(desctop){
+    color: #000;
+    top:calc(50% - 90px) ;
+    &:hover{
+      background-color:transparent;
+      span{
+        color: black;
+      }
+    }
+  }
+  @include respond(phoneS){
+    right: 0;
+  }
+  &:hover{
+    background-color:transparent;
+  }
+}
+
+.seventh{
+  &__wrapper{
+    box-sizing: border-box;
+    background-image: url('../img/trio-decor.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 60px;
+    width: calc(400% + 5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include respond(tablet){
+      padding: 60px 20px;
+    }
+    @include respond(phoneS){
+      padding: 30px 20px;
+    }
+  }
+  &__image{
+    font-size: 0;
+    img{
+      width: 100%;
+    }
+
+  }
+  &__items{
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 17px;
+    background-color: #dfdfdf;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    @include respond(tablet){
+      padding: 30px;
+      flex-direction: column;
+    }
+    @include respond(phone){
+      padding: 20px;
+    }
+  }
+  &__item{
+    margin-right: 70px;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include respond(nout){
+      margin-right: 40px;
+    }
+    @include respond(tablet){
+      margin-bottom: 20px;
+    }
+  }
+  &__text{
+    font-family: HelveticaNewCyr, sans-serif;
+    font-size: 18px;
+  }
+  &__red{
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: $red;
+    @include respond(tablet){
+      margin-bottom: 10px;
+    }
+    margin-bottom: 20px;
+    @include respond(phoneS){
+      background-color: transparent;
+      color: $red;
+    }
+
+  }
+}
+.eighth{
+  position: relative;
+
+  &__items{
+    position: relative;
+    padding: 70px 186px;
+    width: calc(400% + 5px);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    @include respond(nout){
+      padding: 70px 50px;
+    }
+    @include respond(tablet){
+      padding: 40px 20px;
+    }
+
+  }
+  &__item{
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+
+
+  }
+  &__decor1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-30%);
+    width: 300px;
+    img{
+      width: 100%;
+    }
+    @include respond(desctop){
+      display: none;
+    }
+
+  }
+
+  &__decor2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-66%, -75%);
+    img{
+      width: 100%;
+    }
+
+  }
+  &__decor3{
+    position: absolute;
+    bottom: -170px;
+    left: 20%;
+    img{
+      width: 100%;
+    }
+    @include respond(tablet){
+      display: none;
+    }
+  }
+  &__box{
+    margin-top: -150px;
+    @include respond(tablet){
+      margin-top: -50px;
+      .eighth__image{
+        width: 250px;
+
+      }
+    }
+    @include respond(phoneS){
+      margin-top: 30px;
+      .eighth__image{
+        width: 150px;
+      }
+    }
+
+
+  }
+  &__image{
+    position: relative;
+    @include respond(tablet){
+      flex-shrink: 0;
+      width: 200px;
+      img{
+        width: 100%;
+      }
+
+
+    }
+    @include respond(phone){
+      width: 100px;
+    }
+
+
+  }
+  &__image2{
+
+    width: 545px;
+    img{
+      width: 100%;
+    }
+  }
+  &__image3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation: rotateZoom 10s infinite;
+
+  }
+  @keyframes rotateZoom {
+    from{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(10deg) scale(0.9) translateX(-7%);
+    }
+    to{
+      transform: rotate(0deg);
+    }
+    
+  }
+  &__text{
+    padding: 75px 300px 75px 200px;
+    font-family: HelveticaNewCyr, sans-serif;
+    background-color: $gray;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 17px;
+    margin-left: -150px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    @include respond(tablet){
+      padding: 50px 50px 50px 120px;
+      margin-left: -100px;
+    }
+    @include respond(phone){
+      padding: 30px 30px 30px 100px;
+      margin-left: -80px;
+    }
+
+  }
+  &__second{
+    padding: 75px 400px 75px 100px;
+    margin-left: inherit;
+    margin-right: -400px;
+    margin-bottom: 90px;
+    @include respond(tablet){
+      padding: 50px 250px 50px 50px;
+      margin-left: inherit;
+      margin-right: -250px;
+      margin-bottom: 20px;
+    }
+    @include respond(phone){
+      padding: 30px 100px 30px 30px;
+      margin-left: inherit;
+      margin-right: -120px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.ninth{
+  background-color: $gray;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  min-width: 320px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  @include respond(desctop){
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  }
+  @include respond(phoneS){
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+  }
+  &__title{
+    background-color: $red;
+    color: $white;
+    font-family: Play, sans-serif;
+    font-size: 20px;
+    padding: 3px 5px;
+    display: inline-flex;
+  }
+  .wrapper{
+    position: relative;
+    z-index: 1;
+  }
+  &__wrapper{
+    max-width: 1342px;
+    padding: 70px 20px 200px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    @include respond(tablet){
+      padding: 40px 20px 100px;
+    }
+    @include respond(phoneS){
+      padding: 40px 20px 50px;
+    }
+
+
+  }
+  &__icons{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    @include respond(phone){
+      flex-wrap: wrap;
+    }
+  }
+  &__text{
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  &__icon{
+    position: relative;
+    box-sizing: border-box;
+    margin: 25px 75px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 17px;
+    background-color: $white;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(desctop){
+      width: 200px;
+      height: 200px;
+      margin: 25px 30px;
+      padding: 25px;
+      img{
+        width: 100%;
+      }
+
+    }
+  }
+  &__count{
+    position: absolute;
+    font-size: 72px;
+    left: -90px;
+    color: $red;
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    top: 50%;
+    transform: translateY(-50%);
+    @include respond(desctop){
+      left: -50px;
+    }
+    @include respond(phone){
+      display: none;
+    }
+  }
+  &__img{
+    width: 106px;
+    img{
+      width: 100%;
+    }
+  }
+  &__box{
+    box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 17px;
+    background-color: $white;
+    display: flex;
+    margin: auto;
+    @include respond(desctop){
+      flex-direction: column;
+    }
+  }
+  &__photo{
+    img{
+      width: 100%;
+    }
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-shrink: 0;
+    @include respond(desctop){
+      width: 100%;
+    }
+
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+  }
+  &__info{
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    @include respond(desctop){
+      padding: 40px 100px;
+    }
+    @include respond(phone){
+      padding: 20px 40px;
+    }
+    @include respond(phoneS){
+      padding: 20px;
+    }
+
+  }
+  &__main{
+    font-family: Play, sans-serif;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 29px;
+    @include respond(phoneS){
+      margin-bottom: 20px;
+    }
+  }
+  &__all{
+    font-family: HelveticaNewCyr, sans-serif;
+    font-size: 18px;
+    b{
+      font-weight: $font-weight-bold;
+    }
+  }
+  &__border{
+    border-top: 2px solid $gray;
+
+  }
+  &__borderr{
+    border-right: 2px solid $gray;
+    @include respond(desctop){
+      border-bottom: none;
+      border-bottom: 2px solid $gray;
+
+    }
+  }
+  &__decor{
+    position: absolute;
+    width: 400px;
+    bottom: -50px ;
+    right: 0;
+    img{
+      width: 100%;
+    }
+  }
+
+}
+.tenth{
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+  margin-top: -150px;
+  @include respond(phone){
+    margin-top: -100px;
+  }
+  @include respond(phoneS){
+min-height: 600px;
+  }
+
+  &__decor{
+    position: absolute;
+    width: 1500px;
+    left: -415px;
+    top: -500px;
+    img{
+      width: 100%;
+    }
+    @include respond(nout){
+      left: -800px;
+    }
+    @include respond(tablet){
+      top: -450px;
+    }
+
+    @include respond(phoneS){
+      top: -500px;
+    }
+
+  }
+  &__box{
+    width: 400%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__text{
+    font-family:HelveticaNewCyr, sans-serif;
+    font-size: 20px;
+    @include respond(phoneS){
+      font-size: 16px;
+    }
+  }
+
+  &__form{
+    margin-top: 70px;
+    box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 17px;
+    background-color: $gray;
+    padding: 58px 100px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    @include respond(tablet){
+      flex-direction: column;
+      align-items: center;
+      margin: 60px 10px 0;
+    }
+    @include respond(phone){
+      padding: 58px 20px;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  &__button{
+    border-radius: 7px;
+    margin-left: 50px;
+    background-color: $red;
+    font-size: 16px;
+    padding: 10px 20px;
+    height: 49px;
+    border: 2px solid $red;
+    text-transform: uppercase;
+    font-family: Play, sans-serif;
+    font-weight: $font-weight-bold;
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background-color: transparent;
+      color: $red;
+      animation: borderPulse 1000ms infinite ease-out, hoverShine 200ms;
+    }
+    @include respond(tablet){
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    @include respond(phoneS){
+      font-size: 14px;
+      padding: 20px;
+    }
+
+  }
+  @keyframes borderPulse{
+    0%{
+      box-shadow: inset 0px 0px 0px 3px white, 0px 0px 0px 0px rgba($red, 0.7);
+    }
+    100%{
+      box-shadow: inset 0px 0px 0px 1px rgba($red, 0.1), 0px 0px 0px 7px rgba(255, 255, 255, 0);
+    }
+  }
+}

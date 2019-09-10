@@ -1,0 +1,95 @@
+$font-weight-light: 300;
+$font-weight-reg: 400;
+$font-weight-medium:500;
+$font-weight-bold:600;
+
+
+@font-face {
+  font-family: Gilrioy;
+  src: url("../fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+
+}
+@font-face {
+  font-family: MinionPro;
+  src: url("../fonts/MinionPro-Regular.eot") format("embedded-opentype"),
+  url("../fonts/MinionPro-Regular.woff") format("woff"),
+  url("../fonts/MinionPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+
+}
+@font-face {
+  font-family: Play;
+  src: url("../fonts/Play-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: $font-weight-bold;
+
+}
+@font-face {
+  font-family: Play;
+  src: url("../fonts/Play-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: $font-weight-reg;
+
+}
+@font-face {
+  font-family: HelveticaNeueCyr-Roman;
+  src: url("../fonts/Gilroy-Regular.eot") format("embedded-opentype"),
+  url("../fonts/Gilroy-Regular.woff") format("woff"),
+  url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: HelveticaNewCyr;
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"),
+  url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+  url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: $font-weight-bold;
+}
+@font-face {
+  font-family: HelveticaNewCyr;
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"),
+  url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+  url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: $font-weight-medium;
+}
+@font-face {
+  font-family: HelveticaNewCyr;
+  src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype"),
+  url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+  url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: $font-weight-light;
+}
+
+//@font-face{
+//  font-family: "Bobas";
+//  src : url("../fonts/Staatliches/Staatliches-Regular.ttf");
+//
+//}
+@font-face{
+  font-family: "Audiowide";
+  src : url("../fonts/Audiowide/Audiowide-Regular.ttf");
+}
+
+@font-face{
+  font-family: "HelveticaNeue";
+  src : url("../fonts/helvetica/HelveticaNeue.ttf");
+}
+
+//@font-face{
+//  font-family: "myBold";
+//  src : url("../fonts/Raleway-Bold.ttf");
+//
+//}
+//
+//@font-face{
+//  font-family: "myLight";
+//  src : url("../fonts/Raleway-Light.ttf");
+//
+//}
