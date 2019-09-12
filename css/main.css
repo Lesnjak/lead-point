@@ -1663,8 +1663,7 @@ body {
 
 @media (max-width: 480px) {
   .tenth__button {
-    font-size: 14px;
-    padding: 20px; } }
+    font-size: 14px; } }
 
 @-webkit-keyframes borderPulse {
   0% {
