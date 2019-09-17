@@ -297,7 +297,7 @@ body {
 .second__title {
   font-family: Play, sans-serif;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400; }
 
 .second__bold {
@@ -307,7 +307,7 @@ body {
 .second__info {
   font-family: HelveticaNewCyr, sans-serif;
   margin-bottom: 20px;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .second__left-image {
   position: absolute;
@@ -374,7 +374,8 @@ body {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  padding-right: 20px; }
 
 .second__team img {
   width: 100%; }
@@ -2023,12 +2024,7 @@ body {
             justify-content: flex-end;
     width: -webkit-calc(300% + 4px);
     width: calc(300% + 4px);
-    padding: 180px 20px 40px; } }
-
-@media (max-width: 768px) and (max-width: 991px) {
-  .info-box {
-    width: -webkit-calc(400% + 4px);
-    width: calc(400% + 4px); } }
+    padding: 180px 0 40px 60px; } }
 
 @media (max-width: 768px) and (max-width: 991px) {
   .info-box {
@@ -2128,7 +2124,8 @@ body {
 
 @media (max-width: 480px) {
   .info-box__red-button {
-    margin-bottom: 5px; } }
+    margin-bottom: 5px;
+    margin-right: 0; } }
 
 @keyframes borderPulse {
   0% {
